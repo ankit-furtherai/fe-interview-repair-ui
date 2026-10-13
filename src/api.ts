@@ -1,20 +1,6 @@
-export type Source = { id: string; label: string };
+import { CATALOG, type Source } from "./catalog";
 
-// A small fake catalog of reference folders / knowledge sources.
-const CATALOG: Source[] = [
-  { id: "react", label: "React" },
-  { id: "react-router", label: "React Router" },
-  { id: "redux", label: "Redux" },
-  { id: "realtime", label: "Realtime channels" },
-  { id: "read-replicas", label: "Read replicas" },
-  { id: "recoil", label: "Recoil" },
-  { id: "postgres", label: "Postgres" },
-  { id: "playwright", label: "Playwright" },
-  { id: "prometheus", label: "Prometheus" },
-  { id: "kafka", label: "Kafka" },
-  { id: "kubernetes", label: "Kubernetes" },
-  { id: "typescript", label: "TypeScript" },
-];
+export type { Source } from "./catalog";
 
 // Deterministic, query-dependent latency. Shorter queries resolve SLOWER.
 // This is a stand-in for a real backend where a broad query scans more and a
