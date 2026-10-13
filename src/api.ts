@@ -7,7 +7,7 @@ export type { Source } from "./catalog";
 // narrow query hits a cache — the important property for the exercise is that
 // latency does not monotonically track keystroke order.
 export function searchLatencyMs(query: string): number {
-  return Math.max(150, 700 - query.trim().length * 120);
+  return Math.max(150, 1300 - query.trim().length * 230);
 }
 
 export function searchSources(
